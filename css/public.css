@@ -1,0 +1,214 @@
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;
+    font-family: 'Microsoft Yahei', Tahoma, Helvetica, Arial, sans-serif;}
+body{font-size:12px;}
+img{border:none; display: block;}
+ul,ol{list-style:none;}
+input,select,textarea{outline:none; border:none; background:#FFF;}
+textarea{resize:none;}
+a{
+    text-decoration: none;
+    display: block;
+}
+
+.clearfloat{
+    zoom: 1;
+}
+.clearfloat:after{
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+
+.public-center{
+    width: 1024px;
+    margin: 0 auto;
+}
+.header{
+    height: 760px;
+    width: 100%;
+    overflow: hidden;
+
+    background: url("../img/default.gif") no-repeat center center #e1e1e1;
+}
+.header img{
+
+    display: none;
+    height: 760px;
+    width: 100%;
+  /* // height: 100%;*/
+
+}
+.header-title{
+
+    position:fixed; top:0;left:0; width:100%;;
+    height: 56px;
+    background: url("../img/bg_logo.jpg");
+    color: #fff;
+    z-index: 20;
+
+
+}
+.header-center{
+    color: #fff;
+    z-index: 100;
+
+}
+.header-title h3{
+    display: inline-block;
+    *display:inline;
+    margin-right:14px;
+
+}
+.header-title span{
+
+    margin-right:14px;
+}
+
+.header-title .public-center
+{
+    height: 56px;
+    line-height: 56px;
+    font-size: 18px;
+}
+.header-title .nav{
+    float: right;
+}
+.header-title .nav li{
+    float:left;
+    font-size: 12px;
+    margin-left: 60px;
+    border-top: 3px solid transparent;
+}
+.header-title .nav li:hover{
+    border-top: 3px solid #00b7ef;
+}
+.header-title .nav li a{
+    color: #fff;
+}
+
+.header-center {
+    position: absolute;
+    left: 50%;
+    top: 456px;
+    width: 350px;
+    margin-left: -175px;
+    text-align: center;
+
+}
+.header-center .at,.meihua{
+    font-size: 36.39px;
+    font-family: HYQiHei;
+    margin-right: 20px;
+}
+.header-center .jianjie{
+    font-size: 18px;
+    font-family: FZLTXHK;
+    margin-top: 20px;
+}
+.header-center .jianjie .lu
+{
+    color: #359150;
+}
+.header-center .zy{
+    margin-top: 14px;
+    font-size: 12px;
+    font-family: HYb1gj;
+}
+.header-center .dz{
+
+    margin: 28px auto;
+    font-size: 24px;
+    border: 2px solid #9cbf9d;
+    width: 122px;
+    height: 34px;
+    line-height: 34px;
+
+}
+.header-center .dz a{
+    color: #fff;
+}
+.scoll{
+    position: absolute;
+    left: 50%;
+    top: 888px;
+}
+.scoll li{
+    width: 24px;
+    height: 24px;
+    background: #f3f7fa;
+    border-radius: 50%;
+    float: left;
+    margin-right: 5px;
+    filter:alpha(opacity=80);
+    -moz-opacity:0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+}
+
+.scoll li.on { background:#009900}
+
+.header-title .nav li.public-bg{
+    border-top-color: #00b7ef;
+}
+
+
+/*footer*/
+.footer{
+    height: 194px;
+    background: #32b16c;
+    margin-top: 60px;
+}
+/*footer 上边框 实现倒三角*/
+.footer .triangle {
+
+    width: 0;
+    height: 0;
+    border-top: 7px solid #fff;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    margin: auto;
+}
+.footer .custom-made{
+    width: 122px;
+    height: 36px;
+    border: 1px solid #fff;
+    margin: 19px auto;
+
+
+}
+.footer .custom-made a{
+    font-size: 24px;
+    font-family: FZLTCHJW;
+    text-align: center;
+    line-height: 36px;color: #fff;
+}
+.footer .footer-title{
+    color: #fff;
+    font-size: 24px;
+    font-family: Exotic350BT;
+    text-align: center;
+    margin-top: 60px;
+}
+.footer .footer_banben{
+    font-size: 10px;
+    margin-top: 11px;
+    text-align: center;
+}
+/*回到顶部按钮*/
+.back_top{
+    display: none;
+    position: fixed;
+    top:500px;
+    right: 10px;
+    cursor: pointer;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+
+
+}
+.back_top:hover{
+    opacity: 1.1;
+    filter: alpha(opacity=110);
+}

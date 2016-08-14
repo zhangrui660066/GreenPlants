@@ -1,0 +1,14 @@
+
+使用方式：
+PIE.htc、PIE_IE9.js、PIE_IE678.js、selectivizr.js、prefixfree.min.js 将这5个文件，放在js目录下，然后在html中，引入所有css文件之后加入：
+
+<script src="js/selectivizr.js"></script>
+
+
+
+注意事项:
+不支持style属性中的行内样式。
+应该尽量避免使用<style>标签。
+如果需要本地双击html文件方式使用，请在Selectivizr前加载jQuery。
+出现元素抖动或者背景及边框消失的情况，请用 position: relative; zoom: 1; 方式修正，加给元素本身或其父元素。
+如果服务器环境的content-type配置不正确，可能造成css3属性不生效。如Apache，可在.htaccess文件中添加一行AddType text/x-component .htc即可解决此问题。

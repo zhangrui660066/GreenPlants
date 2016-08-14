@@ -1,0 +1,282 @@
+
+/*头部*/
+.header img{height: 700px}
+
+
+
+/*  关于方寸山*/
+.index-intro{
+    color: #604c3f;
+    margin: 0 auto;
+    text-align: center;
+    background: #f3f7fa;
+    overflow: hidden;
+    zoom: 1;
+}
+.index-intro .abort-intro{
+    margin-top: 130px;
+}
+.index-intro .intro-context{
+    margin-top: 59px;
+    font-size: 18px;
+    margin-bottom: 118px;
+}
+.index-intro .intro-context p{
+   margin-top: 24px;
+}
+/* 功能展示*/
+
+.index-show{
+    background: #25a767;
+    overflow: hidden;
+    zoom: 1;
+    text-align: center;
+    color: #fff;
+}
+.index-show .show-context ul{
+    float:left;
+    width:334px;
+}
+.index-show .show-context li img{
+   display: inline;
+}
+.index-show .show-context li{
+    margin: auto;
+    text-align: center;
+
+}
+.index-show .show-context{
+    display: flex;
+    flex-flow: row wrap;/*子元素横向排列,换行*/
+    justify-content: space-between; /*向主轴的结束位置排列*/
+    margin-top: 108px;
+    margin-bottom: 140px;
+}
+.index-show .show-context h1{
+
+    margin-top: 20px;
+}
+.index-show .show-context .show-text{
+    font-size: 14px;
+    font-family: 'Microsoft Yahei', Tahoma, Helvetica, Arial, sans-serif;
+    text-align:left;
+    margin-top: 60px;
+}
+
+
+/*鱼缸租赁*/
+.index-fish  table{
+    width: 100%;
+    margin-bottom: 140px;
+}
+.index-fish td{
+    width: 300px;
+    height: 270px;
+    margin: auto;
+    text-align: center;
+}
+.index-fish td img{
+    display: inline;
+}
+.index-fish td span{
+    font-size: 24px;
+    color: #604c3f;
+    display: block;
+}
+.index-fish .fish-context{
+    margin: auto;
+    width: 254px;
+    height: 254px;
+    border: 1px solid #25a767;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -o-border-radius: 100%;
+
+
+}
+.index-fish .fish-context .center{
+
+    margin: 64px 0;
+    width: 100%;
+
+
+}
+.index-fish .check_fish{
+    position: relative;
+
+    left: 150px;
+    width: 249px;
+    height: 46px;
+
+    background: url("../img/see-xinze.png");
+    cursor: pointer;
+}
+/*绿化垂直*/
+.index-green{
+    background: #d7d2cf;
+}
+.index-green .green_img{
+    background:url(../img/line-two.png) no-repeat;
+    width:960px;
+    height:301px;
+    margin:auto;
+    margin-top:85px;
+    margin-bottom:112px;
+}
+/*流程服务*/
+.index-flow{
+    background: #fff;
+}
+ .flow-img
+{   background: #f3f7fa;
+
+
+}
+.flow-img .f_img{
+   background:url(../img/Plant_liucheng.png) no-repeat;
+     width: 1024px;
+    height:1350px;
+
+}
+/*footer*/
+.footer{
+    height: 194px;
+    background: #32b16c;
+}
+/*footer 上边框 实现倒三角*/
+.footer .triangle {
+
+    width: 0;
+    height: 0;
+    border-top: 7px solid #fff;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    margin: auto;
+}
+.footer .custom-made{
+    width: 122px;
+    height: 36px;
+    border: 1px solid #fff;
+    margin: 19px auto;
+
+
+}
+.footer .custom-made a{
+    font-size: 24px;
+    font-family: FZLTCHJW;
+    text-align: center;
+    line-height: 36px;color: #fff;
+}
+.footer .footer-title{
+    color: #fff;
+    font-size: 24px;
+    font-family: Exotic350BT;
+    text-align: center;
+    margin-top: 60px;
+}
+.footer .footer_banben{
+  font-size: 10px;
+    margin-top: 11px;
+    text-align: center;
+}
+/*回到顶部按钮*/
+.back_top{
+ display: none;
+    position: fixed;
+    top:500px;
+    right: 10px;
+    cursor: pointer;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+
+
+}
+.back_top:hover{
+    opacity: 1.1;
+    filter: alpha(opacity=110);
+}
+
+.banner {
+    position: relative;
+
+    width: 100%;
+    height: 960px;
+    overflow: hidden;
+}
+
+/*轮播图区域的样式*/
+.banner .bannerInner {
+    width: 100%;
+    height: 100%;
+    background: url("../img/default.gif") no-repeat center center #e1e1e1;
+}
+
+.banner .bannerInner div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /*设置每一张图片所在区域的初始样式:z-index=0 opacity=0*/
+    z-index: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.banner .bannerInner div img {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+/*焦点区域的样式*/
+.banner .bannerTip {
+    position: absolute;
+    left: 50%;
+    margin-left: -28px;
+    bottom: 20px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.banner .bannerTip li {
+    float: left;
+    margin-left: 10px;
+    width: 18px;
+    height: 18px;
+    background: lightblue;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.banner .bannerTip li.bg {
+    background: orange;
+}
+
+/*左右按钮区域*/
+.banner > a {
+    display: none;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    margin-top: -52px;
+    width: 44px;
+    height: 77px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    background-image: url("../img/case-left.png");
+}
+
+
+
+.banner a.bannerRight {
+    right: 0px;
+    background-image: url("../img/case-right.png");
+}
+
+.banner a:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}

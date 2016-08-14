@@ -1,0 +1,192 @@
+.imglist{
+    position: relative;
+    width: 100%;
+    height: 632px;
+    overflow: hidden;
+
+}
+.img_div{
+    width: 100%;
+    height: 100%;
+    background: url("../img/default.gif") no-repeat center center #e1e1e1;
+}
+.img_div div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /*设置每一张图片所在区域的初始样式:z-index=0 opacity=0*/
+    z-index: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.img_div  img {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+/*头部*/
+.contact-header{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+.contact-header .contact-center{
+    position: absolute;
+    top: 50%;
+    margin-top: -74px;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+
+
+}
+.contact-center .Atlantis{
+    color: #32b16c;
+    font-size: 30px;
+
+}
+.contact-center .case{
+    font-family: 黑体;
+    font-size: 60px;
+    color: #32b16c;
+}
+.contact-center .item{
+    font-family: 黑体;
+    color: #32b16c;
+    font-size: 18px;
+    width: 317px;
+    margin: auto;
+    padding: 5px;
+}
+
+.dz{
+    margin: 28px auto;
+    font-size: 24px;
+    border:1.5px solid #32b16c;
+    width: 122px;
+    height: 34px;
+    line-height: 34px;
+}
+.dz a{
+    color: #32b16c;
+
+}
+.contact-center .item span{
+    border-bottom:1px solid #009900;
+    margin-left: 30px;
+}
+/*定制*/
+.custom_content{
+    margin-top: 62px;
+}
+.custom_type{
+    margin-bottom: 100px;
+}
+.custom_type h3{
+   height: 51px;
+    float: left;
+    margin-left: 16px;
+    line-height: 51px;
+    color: #3aaa6a;
+    font-size: 24px;
+    font-family: 黑体;
+}
+.img_c .order-img{
+    float: left;
+    height: 51px;
+}
+.custom_type .custom-description{
+    border-left: 3px dashed #3aaa6a;
+    margin-left: 15px;
+    margin-top: 10px;
+    position: relative;
+
+}
+.custom-description .description-text{
+    color: #3aaa6a;
+    font-size: 14px;
+    text-indent: 2em;
+    line-height: 25px;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+.banner{
+    margin-left: 80px;
+    margin-top: 20px;
+    position: relative;
+    width: 900px;
+    height: 506px;
+    overflow: hidden;
+
+}
+.description-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 900px; /*在JS数据绑定结束后根据请求回来数据的多少在动态调整我们的宽度*/
+    height: 506px;
+
+}
+.description-img div{
+    float: left;
+    width: 900px;
+    height:506px;
+    background: url("../img/default.gif") no-repeat center center #e1e1e1;
+}
+.description-img img {
+    display: none;
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.description-minimg{
+    margin-top: 40px;
+    margin-left: 30px;
+    position: relative;
+
+}
+.description-minimg li img{
+    width: 310px;
+    height: 210px;
+    float: left;
+    margin-left: 5px;
+    cursor: pointer;
+}
+/*缩放*/
+
+.bg{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+.custom-description a{
+    display: none;
+    width: 30px;
+    height: 45px;
+    position: absolute;
+    bottom:80px;
+
+    background: url("../img/pre.png");
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    filter: alpha(opacity=50)
+}
+.custom-description a:hover{
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+.custom-description a.bannerLeft{
+    left: 40px;
+    background-position: 0px 0px;
+}
+.custom-description a.bannerRight{
+    right:40px ;
+    background-position: -45px 0px;
+}
